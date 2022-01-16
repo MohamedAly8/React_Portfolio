@@ -17,11 +17,20 @@ export const Container = styled.div`
     grid-row-gap: 0.5rem;
   }
 `;
+
+export const Span = styled.span`
+  font-size: 2rem;
+
+
+`;
+
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
+  // font-size: 3rem;
   flex-direction: row;
   align-content: center;
+  text-align: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }
@@ -36,6 +45,7 @@ export const Div2 = styled.div`
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
+  // font-size: 25px;
   display: flex;
   justify-content: space-around;
   align-items: center;

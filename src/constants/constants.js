@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: 'Breathe Mental Health App',
-    description: "A breath monitoring and chatbot web app that can regulates and logs user breathing patterns. The webapp also includes a chatbot to identify user mental health issues using Machine Learning and guides the user to the helpful recoures.",
-      image: '/images/Breathe.png',
-      tags: ['React', 'Node', 'Dialogflow', 'AuthO', 'GraphCMS'],
-    source: 'https://github.com/MohamedAly8/Breathe-Hackathon-May-2021',
-    visit: 'https://github.com/MohamedAly8/Breathe-Hackathon-May-2021',
+    title: 'Web 3.0 Blockchain Crypto Marketplace',
+    description: "A Blockchain Marketplace App used for trading items with Cryptocurrency. Gnache was utilized for testing",
+      image: '/images/blockchain.png',
+      tags: ['web3.js', 'Solidity', 'Smart Contracts', 'React'],
+    source: 'https://github.com/MohamedAly8/Blockchain-App',
+    visit: 'https://github.com/MohamedAly8/Blockchain-App',
     id: 0,
   },
   {
@@ -27,12 +27,12 @@ export const projects = [
     id: 2,
   },
   {
-    title: 'Sudoku Solver w/ Backtracking',
-    description: "",
-      image: '/images/3.jpg',
-      tags: ['React', 'WebRTC'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    title: 'Breathe Mental Health App',
+    description: "A breath monitoring and chatbot web app that can regulates and logs user breathing patterns. The webapp also includes a chatbot to identify user mental health issues using Machine Learning and guides the user to the helpful recoures.",
+      image: '/images/Breathe.png',
+      tags: ['React', 'Node', 'Dialogflow', 'AuthO', 'GraphCMS'],
+    source: 'https://github.com/MohamedAly8/Breathe-Hackathon-May-2021',
+    visit: 'https://github.com/MohamedAly8/Breathe-Hackathon-May-2021',
     id: 3,
   },
 ];

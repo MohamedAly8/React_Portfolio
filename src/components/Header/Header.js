@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin,AiFillFile  } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import { HiOutlineNewspaper } from 'react-icons/hi';
 import { TiCode } from 'react-icons/ti';
 
 import { Container, Div1, Div2, Div3, NavLink, NavProductsIcon, SocialIcons, Span } from './HeaderStyles';
@@ -43,7 +43,7 @@ const Header = () =>  (
         <AiFillLinkedin size="3rem"></AiFillLinkedin>
       </SocialIcons>
       <SocialIcons href="https://drive.google.com/file/d/1hgkdrIbKQsLVoYhNcXZc88xxRHJ7Uefe/view?usp=sharing" target="_blank">
-        <AiFillFile size="3rem"></AiFillFile>
+        <HiOutlineNewspaper size="3rem"></HiOutlineNewspaper>
       </SocialIcons>
     </Div3>
   </Container>

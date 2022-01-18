@@ -13,7 +13,7 @@ const Hero = (props) => (
      </SectionTitle>
 
      <SectionText>
-       Software Engineer with crazy ambitions and a positive attitude
+       Extrovert Software Engineer with crazy ambitions and a cool tech toolbelt
      </SectionText>
     
       <a href='https://drive.google.com/file/d/1hgkdrIbKQsLVoYhNcXZc88xxRHJ7Uefe/view?usp=sharing' target="_blank">

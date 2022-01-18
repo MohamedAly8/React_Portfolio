@@ -67,6 +67,7 @@ export const ListTitle = styled.h4`
   letter-spacing: 0.02em;
   color: #FFFFFF;
   margin-bottom: 8px;
+  margin-top: 20px;
 
 @media ${props => props.theme.breakpoints.md}{
   font-size: 24px;
@@ -101,6 +102,7 @@ export const ListItem = styled.li`
   max-width: 320px;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 
 @media ${props => props.theme.breakpoints.md}{
   max-width: 203px;
@@ -117,7 +119,7 @@ export const ListIcon = styled.img`
   display: block;
   width: 48px;
   height: 48px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   
   @media ${props => props.theme.breakpoints.md}{
     width: 40px;

@@ -15,10 +15,12 @@ const Hero = (props) => (
      <SectionText>
        Software Engineer with crazy ambitions and a positive attitude
      </SectionText>
-
+    
+      <a href='https://drive.google.com/file/d/1hgkdrIbKQsLVoYhNcXZc88xxRHJ7Uefe/view?usp=sharing' target="_blank">
      <Button>
        My Resume
      </Button>
+     </a>
 
     </LeftSection>
   </Section>

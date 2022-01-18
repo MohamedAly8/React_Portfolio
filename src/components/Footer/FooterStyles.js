@@ -15,13 +15,14 @@ export const FooterWrapper = styled.section`
 `
 
 export const LinkItem = styled.a`
-	font-size: 18px;
+	font-size: 25px;
 	line-height: 30px;
 	color: rgba(255, 255, 255, 0.75);
 	margin-bottom: 16px;
 	transition: .3s ease;
 	position: relative;
 	left: 0;
+	text-align: center;
 
 	&:hover {
 		color: #fff;
@@ -44,7 +45,7 @@ export const LinkItem = styled.a`
 `
 
 export const SocialIconsContainer = styled.div`
-max-width: 1040px;
+max-width: 90%;
 display: flex;
 justify-content: space-between;
 
@@ -139,13 +140,14 @@ export const LinkList = styled.ul`
 export const LinkColumn = styled.div`
 	display: flex;
 	flex-direction: column;
-	max-width: 220px;
 	width: 100%;
+	
+	
 `
 export const LinkTitle = styled.h4`
 	font-style: normal;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 25px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 0.4);
@@ -157,3 +159,12 @@ export const LinkTitle = styled.h4`
 		margin-bottom: 8px;
 	}
 `
+
+export const BottomText = styled.p`
+	text-align: center;
+	letter-spacing: 0.02em;
+	font-size: 15px;
+	line-height: 30px;
+	padding: 1rem;
+`
+

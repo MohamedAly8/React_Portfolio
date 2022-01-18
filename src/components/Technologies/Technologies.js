@@ -1,7 +1,7 @@
 import React from 'react';
 import { DiFirebase, DiReact } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { List, ListContainer, ListIcon, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 import { BiBrain, BiCameraHome } from 'react-icons/bi';
 import { AiOutlineRobot } from 'react-icons/ai';
 import { GiChaingun } from 'react-icons/gi';
@@ -10,6 +10,8 @@ const Technologies = () =>  (
   <div>
     <Section id="technologies">
       <SectionDivider />
+      <br></br>
+      <br></br>
       <SectionTitle>Technologies</SectionTitle>
       <SectionText>
         I worked on Full Stack Development, Machine Learning, Computer Vision, Task Automation and Data Visualization

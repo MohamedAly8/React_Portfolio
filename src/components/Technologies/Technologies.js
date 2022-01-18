@@ -1,24 +1,22 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
-import { BiBrain, BiCameraHome, BiNetworkChart } from 'react-icons/bi';
+import { BiBrain, BiCameraHome } from 'react-icons/bi';
 import { AiOutlineRobot } from 'react-icons/ai';
+import { GiChaingun } from 'react-icons/gi';
 
 const Technologies = () =>  (
   <div>
-    <Section id="tech">
+    <Section id="technologies">
       <SectionDivider />
-      <br></br>
-      <br></br>
-
       <SectionTitle>Technologies</SectionTitle>
       <SectionText>
         I worked on Full Stack Development, Machine Learning, Computer Vision, Task Automation and Data Visualization
       </SectionText>
       <List>
         <ListItem>
-          <DiReact size="3rem"/>
+          <DiReact size="4rem"/>
           <ListContainer>
             <ListTitle>Front-End</ListTitle>
               <ListParagraph>
@@ -27,7 +25,7 @@ const Technologies = () =>  (
           </ListContainer>
         </ListItem>
         <ListItem>
-          <DiFirebase size="3rem"/>
+          <DiFirebase size="4rem"/>
           <ListContainer>
             <ListTitle>Back-End</ListTitle>
               <ListParagraph>
@@ -37,7 +35,7 @@ const Technologies = () =>  (
           </ListContainer>
         </ListItem>
         <ListItem>
-          <BiBrain size="3rem"/>
+          <BiBrain size="4rem"/>
           <ListContainer>
             <ListTitle>Machine Learning</ListTitle>
               <ListParagraph>
@@ -46,7 +44,7 @@ const Technologies = () =>  (
           </ListContainer>
         </ListItem>
         <ListItem>
-          <AiOutlineRobot size="3rem"/>
+          <AiOutlineRobot size="4rem"/>
           <ListContainer>
             <ListTitle>Automation</ListTitle>
               <ListParagraph>
@@ -55,22 +53,22 @@ const Technologies = () =>  (
           </ListContainer>
         </ListItem>
         <ListItem>
-          <BiCameraHome size="3rem"/>
+          <GiChaingun size="4rem"/>
+          <ListContainer>
+            <ListTitle>Blockchain</ListTitle>
+              <ListParagraph>
+                
+                Solidity, Truffle, web3.js 
+              </ListParagraph>
+          </ListContainer>
+        </ListItem>
+        <ListItem>
+          <BiCameraHome size="4rem"/>
           <ListContainer>
             <ListTitle>Computer Vision</ListTitle>
               <ListParagraph>
                 
                 OpenCV, YOLO
-              </ListParagraph>
-          </ListContainer>
-        </ListItem>
-        <ListItem>
-          <BiNetworkChart size="3rem"/>
-          <ListContainer>
-            <ListTitle>Data Visualization</ListTitle>
-              <ListParagraph>
-                
-                Tableau, Python, MATLAB 
               </ListParagraph>
           </ListContainer>
         </ListItem>

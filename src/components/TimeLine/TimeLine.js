@@ -11,9 +11,9 @@ const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
-  // const scroll = (node, left) => {
-  //   return node.scrollTo({ left, behavior: 'smooth' });
-  // }
+  const scroll = (node, left) => {
+    return node.scrollTo({ left, behavior: 'smooth' });
+  }
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -118,7 +118,7 @@ const Timeline = () => {
             key={index}
             index={index}
             active={activeItem}
-            onClick={(e) => handleClick(e, index)}
+            onClick={(e) => handleClick(item, index)}
             type='button'
             >
               <CarouselButtonDot active={activeItem}/>

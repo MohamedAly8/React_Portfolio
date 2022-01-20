@@ -6,8 +6,18 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-
+import { useEffect } from 'react';
+export function useTitle(title) {
+  useEffect(() => {
+    const prevTitle = document.title
+    document.title = title
+    return () => {
+      document.title = prevTitle
+    }
+  })
+}
 const Home = () => {
+  useTitle("Mohamed Aly")
   return (
     <Layout>
       <Section grid>

@@ -17,7 +17,6 @@ const Timeline = () => {
 
   const handleClick = (e, i) => {
     e.preventDefault();
-
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
       

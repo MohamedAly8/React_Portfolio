@@ -38,10 +38,10 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { month: 'June ', year: 2020, text: 'Freelance Full Stack Developer', },
-  { month: 'Jan ', year: 2021, text: 'Software Engineer Intern @ TELUS', },
-  { month: 'Sept ', year: 2021, text: 'Software Analyst Intern @ Thales Group', },
+  { month: 'Sept ', year: 2022, text: 'SWE Teaching Assistant @ McMaster', },
   { month: 'May ', year: 2022, text: 'AI Applications Engineer @ IBM', },
+  { month: 'Sept ', year: 2021, text: 'Software Analyst Intern @ Thales Group', },
+  { month: 'Jan ', year: 2021, text: 'Software Engineer Intern @ TELUS', },
   { month: 'Next Step ', year: null, text: 'Loading.. :) ', },
   // { month: 'Jan ', year: 2021, text: 'Started my own platform', },
 ];

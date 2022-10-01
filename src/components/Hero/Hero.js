@@ -16,7 +16,7 @@ const Hero = (props) => (
        Extrovert Software Engineer with crazy ambitions and a cool tech toolbelt
      </SectionText>
     
-      <a href='https://tinyurl.com/MoAly2022' target="_blank">
+      <a href='https://tinyurl.com/MAly2022' target="_blank">
      <Button>
        My Resume
      </Button>

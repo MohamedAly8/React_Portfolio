@@ -8,6 +8,7 @@ export const Img = styled.img`
 `
 
 export const GridContainer = styled.section`
+
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 padding: 3rem;
@@ -23,8 +24,9 @@ row-gap: 3rem;
 
 `
 export const BlogCard = styled.div`
+  background: #453088;
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 10px 3px 20px rgba(80, 78, 78, 100);
   text-align: center;
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {

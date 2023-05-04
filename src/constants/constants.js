@@ -50,6 +50,6 @@ export const TimeLineData = [
 export const Memoji = [
   {
     id: 1,
-    image: '/images/memoji.png',
+    image: '/images/Memoji.png',
   }
 ]

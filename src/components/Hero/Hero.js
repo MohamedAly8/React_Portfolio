@@ -13,7 +13,19 @@ const Hero = (props) => (
      </SectionTitle>
 
      <SectionText>
-       Extrovert Software Engineer with crazy ambitions and a cool tech toolbelt
+       Passionate Full Stack Engineer seeking SWE new grad roles.
+       <br></br>
+       
+       <a href="#technologies"
+       style={{
+          color: 'white',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          fontWeight: 'bold',
+          fontSize: '2.5rem',
+          borderRadius: '10px',
+         
+       }}> Click here to see my relevent skills!</a>
      </SectionText>
     
       <a href='https://tinyurl.com/MAly2022' target="_blank">

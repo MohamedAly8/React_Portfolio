@@ -2,7 +2,7 @@ import React from 'react';
 import { DiFirebase, DiReact } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListIcon, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
-import { BiBrain, BiCameraHome } from 'react-icons/bi';
+import { BiBrain, BiCameraHome, BiMobile } from 'react-icons/bi';
 import { AiOutlineRobot } from 'react-icons/ai';
 import { GiChaingun } from 'react-icons/gi';
 
@@ -55,12 +55,12 @@ const Technologies = () =>  (
           </ListContainer>
         </ListItem>
         <ListItem>
-          <GiChaingun size="4rem"/>
+          <BiMobile size="4rem"/>
           <ListContainer>
-            <ListTitle>Blockchain</ListTitle>
+            <ListTitle>Mobile Development</ListTitle>
               <ListParagraph>
                 
-                Solidity, Truffle, web3.js 
+                React Native, Swift, MVC/PAC Architecture
               </ListParagraph>
           </ListContainer>
         </ListItem>

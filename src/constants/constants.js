@@ -1,20 +1,20 @@
 export const projects = [
   {
-    title: 'Web 3.0 Blockchain Crypto Marketplace',
-    description: "A Blockchain Marketplace App used for trading items with Cryptocurrency. Gnache was utilized for testing",
-      image: '/images/blockchain.png',
-      tags: ['web3.js', 'Solidity', 'Smart Contracts', 'React'],
-    source: 'https://github.com/MohamedAly8/Blockchain-App',
-    visit: 'https://github.com/MohamedAly8/Blockchain-App',
+    title: 'Ride&Tour Sharing Full Stack Solution',
+    description: "An iOS/Android Ride Sharing app that offers/request carpools, city tours, and recurring carpools. User data is encrypted and authenticated with Firebase.",
+      image: '/images/CarpoolerDemo.jpeg',
+      tags: ['React Native', 'Firebase', 'NodeJs','Restful API'],
+    source: 'https://github.com/MohamedAly8/Carpoolr',
+    visit: 'https://github.com/MohamedAly8/Carpoolr',
     id: 0,
   },
   {
-    title: 'Realtime Messaging App',
-    description: "A full Realtime Chat Application. Features include group chats, Google and Facebook Auth, sending attachments images, User Activity Status ",
-    image: '/images/chitchat.png',
-    tags: ['React', 'ChatEngine', 'Firebase', 'SocialAuth'],
-    source: 'https://github.com/MohamedAly8/ChitChat-Messaging-Web-App',
-    visit: 'https://chitchatnow.netlify.app/',
+    title: '4-Way Intersection Advanced Simulator',
+    description: "An advanced simulator for a 4-way intersection that models realistic traffic patterns. The simulator uses Python to simulate multiple vehicles moving through the intersection with various speeds, turning patterns, and preferences. It also detects/predicts accidents based on driver behavior",
+    image: '/images/intersection.png',
+    tags: ['Python', 'Machine Learning', 'Data Analysis', 'Restful API'],
+    source: 'https://github.com/MohamedAly8/4Way-Intersection-Simulation',
+    visit: 'https://github.com/MohamedAly8/4Way-Intersection-Simulation',
     id: 1,
   },
   {
@@ -38,10 +38,18 @@ export const projects = [
 ];
 
 export const TimeLineData = [
+  { month: 'May ', year: 2023, text: 'Data/Full Stack Engineer @ RBC', },
   { month: 'Sept ', year: 2022, text: 'SWE Teaching Assistant @ McMaster', },
   { month: 'May ', year: 2022, text: 'AI Applications Engineer @ IBM', },
   { month: 'Sept ', year: 2021, text: 'Software Analyst Intern @ Thales Group', },
   { month: 'Jan ', year: 2021, text: 'Software Engineer Intern @ TELUS', },
-  { month: 'Next Step ', year: null, text: 'Loading.. :) ', },
+  
   // { month: 'Jan ', year: 2021, text: 'Started my own platform', },
 ];
+
+export const Memoji = [
+  {
+    id: 1,
+    image: '/images/memoji.png',
+  }
+]

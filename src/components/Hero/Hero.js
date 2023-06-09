@@ -22,9 +22,9 @@ const Hero = (props) => (
           textDecoration: 'none',
           cursor: 'pointer',
           fontWeight: 'bold',
-          fontSize: '2.5rem',
-          borderRadius: '10px',
-         
+          // font size in clamp function for mobile responsiveness
+          fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+          borderRadius: '10px',         
        }}> Click here to see my relevent skills!</a>
      </SectionText>
     

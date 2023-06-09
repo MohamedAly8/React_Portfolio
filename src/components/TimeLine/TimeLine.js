@@ -1,45 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import TimeLineItem from './TimeLineItem';
 import { interpolateAs } from 'next/dist/next-server/lib/router/router';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { Date } from './TimeLineStyles';
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+
+
+ 
 
 const Timeline = () => {
-  const [activeItem, setActiveItem] = useState(0);
-  const carouselRef = useRef();
 
-  const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
-  }
-
-  const handleClick = (e, i) => {
-    e.preventDefault();
-    if (carouselRef.current) {
-      const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
-      scroll(carouselRef.current, scrollLeft);
-    }
-  }
-
-  const handleScroll = () => {
-    if (carouselRef.current) {
-      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
-
-      setActiveItem(index);
-    }
-  }
-
-  // snap back to beginning of scroll when window is resized
-  // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
-    const handleResize = () => {
-      scroll(carouselRef.current, 0);
-    }
 
-    window.addEventListener('resize', handleResize);
   }, []); 
 
   return (
@@ -54,78 +30,45 @@ const Timeline = () => {
         <SectionText>
           Always excited to learn new technologies and positively impact my team
         </SectionText>
+
         
-        <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
-          <>
-            {TimeLineData.map((item,index) => (
-                <CarouselMobileScrollNode key={index} final={index == TOTAL_CAROUSEL_COUNT -1}>
-                  <CarouselItem
-                  index={index}
-                  id={`carousel__item-${index}`}
-                  active={activeItem}
-                  onClick={(e) => handleClick(e, index)}
-                  >
-                    <CarouselItemTitle>
-                      {item.month}
-                      {item.year}
-                      
-                      <CarouselItemImg
-                    width="208"
-                    height="6"
-                    viewBox="0 0 208 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
-                      fill="url(#paint0_linear)"
-                      fill-opacity="0.33"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear"
-                        x1="-4.30412e-10"
-                        y1="0.5"
-                        x2="208"
-                        y2="0.500295"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" />
-                        <stop
-                          offset="0.79478"
-                          stop-color="white"
-                          stop-opacity="0"
-                        />
-                      </linearGradient>
-                    </defs>
-                  </CarouselItemImg>
-                    </CarouselItemTitle>
-                    <CarouselItemText>
-                      {item.text}
-                    </CarouselItemText>
 
+        <VerticalTimeline lineColor={"white"}>
+          {TimeLineData.map((data, idx) => (
+            <VerticalTimelineElement
 
-                  </CarouselItem>
-                </CarouselMobileScrollNode>
-            ))}
-          </>
-
-        </CarouselContainer>
-        <CarouselButtons>
-          {TimeLineData.map((item,index) => (
-            <CarouselButton 
-            key={index}
-            index={index}
-            active={activeItem}
-            onClick={(e) => handleClick(item, index)}
-            type='button'
+              key={idx}
+              date={<Date>{data.date}</Date>}
+              contentStyle={{ background: '#f0e9f7', color: '#fff' }}
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              
+              //icon src link in data.icon that fits the circle
+              icon={<img src={data.icon} style={{width: '100%', height: '100%', borderRadius: '40%'}}></img>}
             >
-              <CarouselButtonDot active={activeItem}/>
-            </CarouselButton>
+              
+              <h3 className="vertical-timeline-element-title" style={{color:'black'}}>{data.title}</h3>
+              <h4 className="vertical-timeline-element-subtitle" style={{color:'black'}}>{data.subtitle}</h4>
+              
+              <div style={{
+                display: 'flex', flexDirection: 'row', flexWrap: 'wrap',
+                
+              }}>
+                  {/* loop through tag array in data and show results in p tag below */}
+                {data.tagArray.map((tag, idx) => (
+                  <p key={idx} style={{background: '#7c65c9', borderRadius: '10px', padding: '10px', marginRight: '5px', fontSize: '10px'}}>
+                    {tag}
+                  </p>
+                ))}
+              </div>
+              <p style={{color:'black', fontSize: '0.8em'}}>
+                {data.text}
+              </p>
 
-
+            </VerticalTimelineElement>
           ))}
-        </CarouselButtons>
+        </VerticalTimeline>
+
+
         
       </Section>
     </div>

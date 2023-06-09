@@ -38,14 +38,40 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { month: 'May ', year: 2023, text: 'Data/Full Stack Engineer @ RBC', },
-  { month: 'Sept ', year: 2022, text: 'SWE Teaching Assistant @ McMaster', },
-  { month: 'May ', year: 2022, text: 'AI Applications Engineer @ IBM', },
-  { month: 'Sept ', year: 2021, text: 'Software Analyst Intern @ Thales Group', },
-  { month: 'Jan ', year: 2021, text: 'Software Engineer Intern @ TELUS', },
-  
-  // { month: 'Jan ', year: 2021, text: 'Started my own platform', },
+  { 
+    date: 'May-Sep 2023', 
+    title: 'Data Engineer Intern', 
+    subtitle: 'RBC', 
+    text: 'At RBC, I led a team of 5 in developing a PoC for a virtual assistant app integrating fine-tuned GPT. The project enhanced operational efficiency by reducing routine task time by 60% for 200+ users. Developed a scalable system architecture and a robust data pipeline handling 3TB+ data daily.', 
+    icon: '/images/rbc.png', 
+    tagArray: ['LLM', 'Angular',  'NodeJS', 'Python', 'Kafka'] 
+  },
+  { 
+    date: 'May-Sep 2022', 
+    title: 'AI Applications Engineer Intern', 
+    subtitle: 'IBM', 
+    text: 'At IBM, I automated manual SQL tasks resulting in a 300% improvement in processing time. Developed a full-stack web app empowering clients to make informed business decisions and save significantly. Led the development and presentation of several high-impact PoC demos, contributing to the acquisition of key projects.', 
+    icon: '/images/ibm.png', 
+    tagArray: ['SQL', 'Python', 'React', 'NodeJS'] 
+  },
+  { 
+    date: 'Sep-Dec 2021', 
+    title: 'Software Engineer Intern', 
+    subtitle: 'Thales Group', 
+    text: 'At Thales Group, I improved autonomous vehicle data processing by 65%, saving significant costs. Utilized Agile methodologies to deliver a complex software solution, and developed object detection models enhancing obstacle recognition accuracy by 25%, contributing to system safety and efficiency.', 
+    icon: '/images/thales.png', 
+    tagArray: ['Python', 'React', 'Docker', 'MongoDB', 'TensorFlow', 'Agile'] 
+  },
+  { 
+    date: 'Jan-Sep 2021', 
+    title: 'Full Stack Software Engineer Intern', 
+    subtitle: 'TELUS', 
+    text: 'At TELUS, I led the development of an internal web app increasing operational efficiency by 40%. Built PoC Machine Learning models that sparked a rise in stakeholder investment and automated data stream processing, replacing hours of manual work.', 
+    icon: '/images/telus.png', 
+    tagArray: ['React', 'Python', 'TensorFlow', 'Pandas'] 
+  },
 ];
+
 
 export const Memoji = [
   {

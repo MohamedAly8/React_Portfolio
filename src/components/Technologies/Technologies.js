@@ -22,7 +22,7 @@ const Technologies = () =>  (
           <ListContainer>
             <ListTitle>Front-End</ListTitle>
               <ListParagraph>
-                React.js, Javascript, Git, Vue.js
+                React.js, Angular, Javascript, HTML, CSS
               </ListParagraph>
           </ListContainer>
         </ListItem>
@@ -31,17 +31,16 @@ const Technologies = () =>  (
           <ListContainer>
             <ListTitle>Back-End</ListTitle>
               <ListParagraph>
-                Node.js, Docker, Databases,
-                 PHP, Firebase
+                AWS, Node.js, Docker, SQL, MongoDB, Firebase
               </ListParagraph>
           </ListContainer>
         </ListItem>
         <ListItem>
           <BiBrain size="4rem"/>
           <ListContainer>
-            <ListTitle>Machine Learning</ListTitle>
+            <ListTitle>Artifical Intelligence</ListTitle>
               <ListParagraph>
-                TensorFlow, Keras, Scikit Learn, PyTorch
+                TensorFlow, GPT API, PyTorch, Keras
               </ListParagraph>
           </ListContainer>
         </ListItem>
@@ -50,7 +49,7 @@ const Technologies = () =>  (
           <ListContainer>
             <ListTitle>Automation</ListTitle>
               <ListParagraph>
-                Shellscript, Python, Ruby
+                Bash, Python
               </ListParagraph>
           </ListContainer>
         </ListItem>

@@ -152,3 +152,26 @@ export const CarouselButtonDot = styled.div`
   width: 3px;
   height: 3px;
 `
+
+export const Date = styled.div`
+  
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 32px;
+  
+  
+  @media ${props => props.theme.breakpoints.sm} {
+    font-size: 15px;
+    line-height: 24px;
+    color: black;
+  }
+  @media ${props => props.theme.breakpoints.xl} {
+    font-size: 12px;
+    line-height: 24px;
+    color: black;
+  }
+
+  
+`;
+

@@ -17,5 +17,5 @@ const BackgroundAnimation = () => (
     ))}
   </div>
 );
-
+3
 export default BackgroundAnimation;

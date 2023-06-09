@@ -27,7 +27,7 @@ const Footer = () => {
           <SocialIcons href="https://github.com/MohamedAly8" target="_blank">
         <AiFillGithub size="6rem"></AiFillGithub>
       </SocialIcons>
-      <SocialIcons href="https://tinyurl.com/MAly2022" target="_blank">
+      <SocialIcons href="https://drive.google.com/file/d/1To7V4CwChhTnMp-TIOkPRCRJgkrWIZh4/view?usp=sharing" target="_blank">
         <HiOutlineNewspaper size="6rem"></HiOutlineNewspaper>
       </SocialIcons>
       <SocialIcons href="https://www.linkedin.com/in/mohamed-aly08/" target="_blank">

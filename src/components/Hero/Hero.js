@@ -28,7 +28,7 @@ const Hero = (props) => (
        }}> Click here to see my relevent skills!</a>
      </SectionText>
     
-      <a href='https://tinyurl.com/MAly2022' target="_blank">
+      <a href='https://drive.google.com/file/d/1To7V4CwChhTnMp-TIOkPRCRJgkrWIZh4/view?usp=sharing' target="_blank">
      <Button>
        My Resume
      </Button>

@@ -3,7 +3,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 import TimeLineItem from './TimeLineItem';
-import { interpolateAs } from 'next/dist/next-server/lib/router/router';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Date } from './TimeLineStyles';
@@ -14,10 +13,6 @@ import { Date } from './TimeLineStyles';
 
 const Timeline = () => {
 
-  useEffect(() => {
-
-  }, []); 
-
   return (
     <div>
       <Section id="about">
@@ -27,11 +22,6 @@ const Timeline = () => {
         <SectionTitle>
           Experience
         </SectionTitle>
-        <SectionText>
-          Always excited to learn new technologies and positively impact my team
-        </SectionText>
-
-        
 
         <VerticalTimeline lineColor={"white"}>
           {TimeLineData.map((data, idx) => (
@@ -43,7 +33,7 @@ const Timeline = () => {
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               
               //icon src link in data.icon that fits the circle
-              icon={<img src={data.icon} style={{width: '100%', height: '100%', borderRadius: '40%'}}></img>}
+              icon={<img src={data.icon} style={{width: '100%', height: '100%', borderRadius: '40%', backgroundColor: 'white'}}></img>}
             >
               
               <h3 className="vertical-timeline-element-title" style={{color:'black'}}>{data.title}</h3>
@@ -68,7 +58,7 @@ const Timeline = () => {
           ))}
         </VerticalTimeline>
 
-
+          <br></br>
         
       </Section>
     </div>

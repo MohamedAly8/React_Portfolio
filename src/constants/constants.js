@@ -39,6 +39,14 @@ export const projects = [
 
 export const TimeLineData = [
   { 
+    date: 'May 2024 - Present', 
+    title: 'Associate Software Engineer', 
+    subtitle: 'Veeva Systems', 
+    text: 'Working with React and Java on VaultCRM (Service Center), a customer relationship management system that helps life sciences companies manage their customer interactions. I am responsible for developing new features, fixing bugs, and maintaining the system.', 
+    icon: '/images/veeva.jpg', 
+    tagArray: ['React', 'Java', 'Spring Boot', 'Jest', 'Mockito'] 
+  },
+  { 
     date: 'May-Sep 2023', 
     title: 'Data Engineer Intern', 
     subtitle: 'RBC', 

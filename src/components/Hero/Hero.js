@@ -13,7 +13,7 @@ const Hero = (props) => (
      </SectionTitle>
 
      <SectionText>
-       Passionate Full Stack Engineer seeking SWE new grad roles.
+       Associate Software Engineer at Veeva Systems. I am a passionate software engineer with experience in designing and developing software solutions. 
        <br></br>
        
        <a href="#technologies"
